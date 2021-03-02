@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'spicy';
+    src: url('../fonts/SpicyRice-Regular.ttf');
+}
+
+.spicy {
+    font-family: spicy;
+}
+
+.hippoBg{
+    /* background: url("../img/bg.jpg") no-repeat fixed center; */
+    background: url("https://media2.giphy.com/media/3oz8xOkQ28phUImhwI/200w.webp?cid=ecf05e47b3ftdybw0omkp7nf4or42zgs6bux6ir2d8ygxomf&rid=200w.webp") no-repeat fixed center;
+}

@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-</head>
-<body>
-  <h1>1. Finish profile</h1>
-  <h1>2. Finish browse</h1>
-  <h1>3. Notifications and Actions</h1>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/colors_new.css" /> -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="css/animate.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta property="og:website" content="http://dropkindnessnotbombs.com/" />
+    <meta property="og:url" content="http://dropkindnessnotbombs.com/" />
+    <meta name="url" content="http://dropkindnessnotbombs.com" />
+    <meta name="identifier-URL" content="http://dropkindnessnotbombs.com" />
+    <meta property="og:type" content="app" />
+    <meta property="og:title" content="Drop Kindness Not Bombs" />
+    <meta
+      property="og:description"
+      content="100+ suggestions to kill 'em with kindness"
+    />
+    <meta
+      property="og:image"
+      content="https://lockdowntours.github.io/kindnessapp/img/kindnessLogo.png"
+    />
+    <meta
+      name="twitter:image"
+      content=" https://lockdowntours.github.io/kindnessapp/img/kindnessLogo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Drop Kindness Not Bombs</title>
+  </head>
+  <body scroll="no" style="overflow: hidden">    
+    <div class="w-full md:pb-0 h-screen bg-cover bg-center hippoBg">
+      <div class="pt-20 h-screen flex items-center justify-center">
+        <!-- WEBSITE CONTENT -->
+        <div
+          id="animationsHere"
+          class="animate__animated w-full sm:w-8/12 lg:w-6/12"
+        >
+          <div
+            class="md:text-lg bg-white text-white font-bold rounded-lg sm:border shadow-lg p-5 pb-2 mx-10 md:mx-0"
+          >
+            <div class="flex flex-row">
+              <img
+                class="mx-auto w-40 md:w-60 rounded-full flex items-center justify-center kindnessLogo mb-5"
+                src="img/logo.jpg"
+                alt="flower turquoise"
+              />
+              <p class="spicy text-center mb-2 text-black">Hug a hippo</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </body>
 </html>
