@@ -13,5 +13,5 @@
       $(".hippoDisclaimer, .hippoContainer").show();
     $("#animationsHere").show().addClass("animate__animated animate__jackInTheBox");
       }, 1000);
-    $(".hippoBg").css({"background": 'url("../img/bg.jpg")', "background-size": 'cover'});
+    $(".hippoBg").css({"background": 'url("http://mrmoonhead.com/hugahippo/img/bg.jpg")', "background-size": 'cover'});
   }
