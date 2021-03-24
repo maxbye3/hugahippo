@@ -30,64 +30,57 @@
       property="og:description"
       content="Find your local hippo to hug"
     />
-    <!-- <meta
-      property="og:image"
-      content="https://lockdowntours.github.io/kindnessapp/img/kindnessLogo.png"
-    />
-    <meta
-      name="twitter:image"
-      content=" https://lockdowntours.github.io/kindnessapp/img/kindnessLogo.png"
-    /> -->
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Hug a hippo</title>
   </head>
-  <body scroll="no" style="overflow: hidden">    
-    <div class="w-full md:pb-0 h-screen bg-cover bg-center hippoBg">
-      <div class="pt-20 h-screen flex items-center justify-center">
+  <body scroll="no" style="overflow: hidden">   
+  <div class="w-full md:pb-0 h-screen bg-cover bg-center hippoBg">
+    <div class="h-screen flex items-center justify-center">
         <!-- WEBSITE CONTENT -->
+      <div
+        id="animationsHere"
+        class="animate__animated w-full sm:w-8/12 lg:w-6/12"
+      >
         <div
-          id="animationsHere"
-          class="animate__animated w-full sm:w-8/12 lg:w-6/12"
+          class="hippoContainer md:text-lg bg-white text-white font-bold rounded-lg sm:border shadow-lg p-5 pb-2 mx-5 md:mx-0"
         >
-          <div
-            class="md:text-lg bg-white text-white font-bold rounded-lg sm:border shadow-lg p-5 pb-2 mx-10 md:mx-0"
-          >
+          <section class="homepage">
             <div class="flex flex-row">
               <img
-                class="mx-auto w-20 rounded-full flex items-center justify-center mb-5"
-                src="img/logo.jpg"
-                alt="flower turquoise"
+              class="ml-auto w-20 rounded-full flex items-center justify-center mb-5"
+              src="img/logo.jpg"
+              alt="flower turquoise"
               />
-              <h1 class="ml-2 spicy text-center mb-2 text-black text-3xl mt-5 mr-5">Hug a hippo</h1>
-              
+              <h1 class="ml-2 mr-auto spicy text-center mb-2 text-black text-xl sm:text-2xl md:text-3xl mt-5">Hug a hippo</h1>       
             </div>
-
-              <!-- <section class="flex w-100"> -->
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                
-                
-
             
-          </div>
+            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4" role="alert">
+              <p class="font-bold">Your closest hippo</p>
+            </div>
+            <iframe width="100%" height="50px" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d39714.945764013384!2d-0.16346704499455325!3d51.528182895947964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x48761b5161b93317%3A0x86773f8e76f37d7!2sSt%20John%20Restaurant%2C%20Saint%20John%20Street%2C%20London!3m2!1d51.5204534!2d-0.10143039999999999!4m5!1s0x48761ad73297f857%3A0xb1723f26e03c12a8!2sLondon%20Zoo%2C%20Outer%20Circle%2C%20London!3m2!1d51.535287499999995!2d-0.1534303!5e0!3m2!1sen!2suk!4v1616530266000!5m2!1sen!2suk" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="hugThisHippo()">Hug this hippo 🤗</button>
+            <button class="md:text-lg button2 my-2 rounded-md bg-gradient-to-br from-yellow-400 px-1 p-3 sm:p-5 w-full bg-pink-500" onclick="about()">Find another hippo to hug 🦛</button>
+          </section>
+          <section class="hippoDisclaimer">
+            <div class="text-center">
+              <h3 class="text-red-500">Disclaimer!</h3>
+              <p class="text-black">Hippos are actually super docile creatures and just want nothing more than to be hugged.</p>
+            </div>
+            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="hugThisHippo()">I understand</button>
+
+          </section>
         </div>
       </div>
-      <!-- content -->
     </div>
-
-
     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-        $("#animationsHere").removeClass();
-  setTimeout(function () {
-    $("#animationsHere").show().addClass("animate__animated animate__jackInTheBox");
-  }, 2000);
-    </script>
+    <script src="js/index.js"></script>
+    <script src="js/map.js"></script>   
   </body>
 </html>
