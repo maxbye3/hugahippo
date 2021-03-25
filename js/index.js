@@ -7,11 +7,24 @@
 
 
   function hugThisHippo() {
-    $(".homepage, .hippoContainer").hide();
-    $("#animationsHere").removeClass();
+    hideAll();
     setTimeout(function () {
       $(".hippoDisclaimer, .hippoContainer").show();
     $("#animationsHere").show().addClass("animate__animated animate__jackInTheBox");
       }, 1000);
-    $(".hippoBg").css({"background": 'url("http://mrmoonhead.com/hugahippo/img/bg.jpg")', "background-size": 'cover'});
+    $(".hippoBg").css({"background": 'url("http://mrmoonhead.com/hugahippo/img/disclaimer.png")', "background-size": 'cover'});
+  }
+
+  function hideAll(){
+    $(".homepage, .hippoContainer").hide();
+    $("#animationsHere").removeClass();
+  }
+
+  function londonZooDescription() {
+    $(".hippoBg").css({"background": 'url("http://mrmoonhead.com/hugahippo/img/details.png")', "background-size": 'cover'});
+    
+    setTimeout(function () {
+      $(".hippoDisclaimer, .hippoContainer").show();
+    $("#animationsHere").show().addClass("animate__animated animate__jackInTheBox");
+      }, 1000);
   }
