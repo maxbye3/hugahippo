@@ -11,6 +11,10 @@
     display: none;
 }
 
+body{
+    background: red;
+}
+
 .hippoBg{
     background: url("../img/hippoGif.gif") no-repeat fixed center;
 /* 

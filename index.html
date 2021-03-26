@@ -47,6 +47,41 @@
         <div
           class="hippoContainer md:text-lg bg-white text-white font-bold rounded-lg sm:border shadow-lg p-5 pb-2 mx-5 md:mx-0"
         >
+          <section class="hippoDetails">
+            <div class="mx-20 w-32 mr-3 rounded-md bg-gradient-to-br from-green-400 to-red-500">
+              <img src="img/hippo.gif" class="w-100">
+            </div>
+            <div class="flex flex-row">                
+              <div class="text-center py-4 lg:px-4">
+                <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                  <span class="flex rounded-4  bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Congrats!</span>
+                  <p class="font-semibold mr-2 text-left flex-auto leading-5">You are 1 hour and 25 minutes away from hugging a hippo!</p>
+                </div>
+              </div>                
+            </div>
+       
+              <!-- <div class="w-32 mr-3 rounded-md bg-gradient-to-br from-green-400 to-red-500">
+                <img src="img/hippo.gif" class="w-100">
+              </div> -->
+              <!-- <img src="img/climbing.gif" width="93px" height="20px" class="mr-3 rounded-md"/>
+              <img src="img/gift.gif" width="32px" class="w-32 mr-3 rounded-md"/> -->
+              <div class="bg-red-100 border border-red-400 text-red-700 px-2 py-1 rounded relative" role="alert">
+                <div class="flex flex-row">
+                  <img src="img/fence.png" class="w-20 h-20 my-auto">
+                  <div class="flex flex-col my-3 mx-4">
+                    <strong class="font-bold">London Zoo has 3 security barriers</strong>
+                    <!-- <span class="block sm:inline font-normal">Inside .</span> -->
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="text-center py-4 lg:px-4">
+                <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                  <span class="flex rounded-4  bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Congrats!</span>
+                  <p class="font-semibold mr-2 text-left flex-auto leading-5">You are 1 hour and 25 minutes away from hugging a hippo!</p>
+                </div>
+              </div>                 -->
+            <!-- </div> -->
+          </section>
           <section class="homepage">
             <div class="flex flex-row">
               <img
@@ -61,7 +96,7 @@
               <p class="font-bold">Your closest hippo</p>
             </div>
             <iframe width="100%" height="50px" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d39714.945764013384!2d-0.16346704499455325!3d51.528182895947964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x48761b5161b93317%3A0x86773f8e76f37d7!2sSt%20John%20Restaurant%2C%20Saint%20John%20Street%2C%20London!3m2!1d51.5204534!2d-0.10143039999999999!4m5!1s0x48761ad73297f857%3A0xb1723f26e03c12a8!2sLondon%20Zoo%2C%20Outer%20Circle%2C%20London!3m2!1d51.535287499999995!2d-0.1534303!5e0!3m2!1sen!2suk!4v1616530266000!5m2!1sen!2suk" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="hugThisHippo()">Hug this hippo 🤗</button>
+            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="disclaimer()">Hug this hippo 🤗</button>
             <button class="md:text-lg button2 my-2 rounded-md bg-gradient-to-br from-yellow-400 px-1 p-3 sm:p-5 w-full bg-pink-500" onclick="about()">Find another hippo to hug 🦛</button>
           </section>
           <section class="hippoDisclaimer">
@@ -69,7 +104,7 @@
               <h3 class="text-red-500">Disclaimer!</h3>
               <p class="text-black">Hippos are actually super docile creatures and just want nothing more than to be hugged.</p>
             </div>
-            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="hugThisHippo()">I understand</button>
+            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="londonZooDescription()">I understand</button>
 
           </section>
         </div>
