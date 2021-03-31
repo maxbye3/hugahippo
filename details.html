@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/colors_new.css" /> -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="css/animate.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta property="og:website" content="http://hugahippo.com/" />
+    <meta property="og:url" content="http://hugahippo.com/" />
+    <meta name="url" content="http://hugahippo.com" />
+    <meta name="identifier-URL" content="http://hugahippo.com" />
+    <meta property="og:type" content="app" />
+    <meta property="og:title" content="Hug a hippo" />
+    <meta
+      property="og:description"
+      content="Find your local hippo to hug"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hug a hippo</title>
+  </head>
+  <body>   
+  <div class="w-full md:pb-0 bg-cover bg-center hippoBg">
+    <div class=" flex items-center justify-center">
+        <!-- WEBSITE CONTENT -->
+      <div
+        id="animationsHere"
+        class="animate__animated w-full sm:w-8/12 lg:w-6/12"
+      >
+        <div
+          class="hippoContainer md:text-lg bg-white text-white font-bold rounded-lg sm:border shadow-lg p-5 pb-2 mx-5 md:mx-0"
+        >
+          <section class="description">
+            <div class="ml-auto mr-auto w-32 mr-3 rounded-md bg-gradient-to-br from-green-400 to-red-500">
+              <img src="img/hippo.gif" class="w-100">
+            </div>
+            <div class="flex flex-row">                
+              <div class="ml-auto mr-auto text-center py-4 lg:px-4">
+                <div class=" p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                  <span class="flex rounded-4  bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Congrats!</span>
+                  <p class="font-semibold mr-2 text-left flex-auto leading-5">You are 1 hour and 25 minutes away from hugging a hippo!</p>
+                </div>
+              </div>                
+            </div>
+              <!-- SECURITY FENCE -->
+              <div class="bg-red-100 border border-red-400 text-red-700 px-2 py-1 rounded relative" role="alert">
+                <div class="flex flex-row">
+                  <img src="img/fence.png" class="w-20 h-20 my-auto">
+                  <div class="flex flex-col my-3 mx-4">
+                    <strong class="font-bold">Security detected!</strong>
+                    <span class="block sm:inline font-normal">There are 3 security fences in London Zoo.</span>
+                  </div>
+                </div>
+              </div>
+              <!-- security fence -->
+              <!-- GIFT -->
+              <div class="mt-5 bg-blue-100 border border-blue-400 text-blue-700 px-2 py-1 rounded relative" role="alert">
+                <div class="flex flex-row">
+                  <img src="img/gift.png" class="w-20 h-20 my-auto">
+                  <div class="flex flex-col my-3 mx-4">
+                    <strong class="font-bold">Please ensure...</strong>
+                    <span class="block sm:inline font-normal">Please hand over wedding gift before hugging hippo and/or <a href="https://withjoy.com/katy-and-max/registrylinks" class="text-blue-600"><u>signing the online registry which can be found here.</u></a></span>
+                  </div>
+                </div>
+              </div>
+              <!-- gift -->
+              <hr>
+              <div class="border-t-2 border-fuchsia-600 mt-6 text-black py-6">
+                <div class="col flex">
+                  <h3 class="mb-5">Affiliate ads</h3>
+                </div>
+                <div class="flex row border border-gray-400">
+                  <img src="img/amazon/left.png" alt="amazon_left" class="h-32 md:h-40">
+                  <img src="img/amazon/right.png" alt="amazon_right" class="h-36 md:h-60 ml-auto">
+                </div>
+                <div class="flex row mt-4" style="background-color: #1e70bd;">
+                  <img src="img/life insurance/left.png" alt="amazon_left" class="h-40 md:h-40">
+                  <img src="img/life insurance/right.png" alt="amazon_right" class="h-40 md:h-60 ml-auto mb-2">
+                </div>
+              </div>
+              <div class="border-t-2 border-fuchsia-600 mt-6 text-white py-6">
+                <a href="/distance.html">
+                  <button class="md:text-lg button2 my-2 rounded-md bg-gradient-to-br from-yellow-400 px-1 p-3 sm:p-5 w-full bg-pink-500">Calculate route to hippo 🗺</button>
+                </a>
+              </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/map.js"></script>   
+  </body>
+</html>
