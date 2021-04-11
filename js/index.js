@@ -2,7 +2,7 @@
   $( document ).ready(function() {
     hideAll();
     $(".homepage").show();
-    $("#gmap_canvas").attr("height", window.innerHeight - 350);
+    $("#map").css("height", window.innerHeight - 350);
     $("#animationsHere").removeClass(); 
     setTimeout(function () {
       $("#animationsHere").show().addClass("animate__animated animate__jackInTheBox");

@@ -2,7 +2,8 @@ function initMap() {
   const directionsRenderer = new google.maps.DirectionsRenderer();
   const directionsService = new google.maps.DirectionsService();
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 14,
+    zoom: 7,
+   center: { lat: 51.5074, lng: 0.1278 },
   });
   directionsRenderer.setMap(map);
   displayDrivingRoute(directionsService, directionsRenderer);
