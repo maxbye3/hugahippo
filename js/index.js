@@ -1,8 +1,8 @@
 
   $( document ).ready(function() {
     hideAll();
-    $(".homepage").show();
-    $("#map").css("height", window.innerHeight - 350);
+    $("#map").css("height", '0px');
+    $(".homepage").show();    
     $("#animationsHere").removeClass(); 
     setTimeout(function () {
       $("#animationsHere").show().addClass("animate__animated animate__jackInTheBox");

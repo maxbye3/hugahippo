@@ -6,7 +6,7 @@ function initMap() {
    center: { lat: 51.5074, lng: 0.1278 },
   });
   directionsRenderer.setMap(map);
-  displayDrivingRoute(directionsService, directionsRenderer);
+  // displayDrivingRoute(directionsService, directionsRenderer);
   // calculateWalkingRoute(directionsService);
 
   /*   document.getElementById("mode").addEventListener("change", () => {
@@ -14,7 +14,7 @@ function initMap() {
     }); */
 }
 
-function calculateWalkingRoute(directionsService) {
+function calculateWalkingRoute(directionsService) {  
   directionsService.route({
       origin: "26 St John St, Barbican, London EC1M 4AY",
       destination: "London Zoo",
@@ -32,7 +32,7 @@ function calculateWalkingRoute(directionsService) {
 
 
 function displayDrivingRoute(directionsService, directionsRenderer) {
-
+  
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -50,6 +50,8 @@ function displayDrivingRoute(directionsService, directionsRenderer) {
           },
           (response, status) => {
             if (status == "OK") {
+              $(".loadingHippo").hide();
+              $("#map").css("height", window.innerHeight - 350);
               directionsRenderer.setDirections(response);
               console.log("driving duration: ", response.routes[0].legs[0].duration.text);
               /* console.log("walking: 1 hour 6 minutes") */
