@@ -1,12 +1,13 @@
+
 function initMap() {
-  const directionsRenderer = new google.maps.DirectionsRenderer();
   const directionsService = new google.maps.DirectionsService();
+  const directionsRenderer = new google.maps.DirectionsRenderer();
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 7,
    center: { lat: 51.5074, lng: 0.1278 },
   });
   directionsRenderer.setMap(map);
-  // displayDrivingRoute(directionsService, directionsRenderer);
+  displayDrivingRoute(directionsService, directionsRenderer);
   // calculateWalkingRoute(directionsService);
 
   /*   document.getElementById("mode").addEventListener("change", () => {
@@ -14,9 +15,11 @@ function initMap() {
     }); */
 }
 
-function calculateWalkingRoute(directionsService) {  
+function calculateWalkingRoute(directionsService) { 
+  const whereAmI =  $("input").val() || "26 St John St, Barbican, London EC1M 4AY";
+  console.log(whereAmI);
   directionsService.route({
-      origin: "26 St John St, Barbican, London EC1M 4AY",
+      origin: whereAmI,
       destination: "London Zoo",
       // Note that Javascript allows us to access the constant
       // using square brackets and a string value as its
@@ -32,16 +35,14 @@ function calculateWalkingRoute(directionsService) {
 
 
 function displayDrivingRoute(directionsService, directionsRenderer) {
-  
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-
+    const whereAmI =  $("input").val() || "26 St John St, Barbican, London EC1M 4AY";
+  console.log(whereAmI);
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(
+  //     (position) => {
+  //       console.log(position);
         directionsService.route({
-            origin: {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude,
-                      },
+            origin: whereAmI,
             destination: "London Zoo",
             // Note that Javascript allows us to access the constant
             // using square brackets and a string value as its
@@ -61,6 +62,6 @@ function displayDrivingRoute(directionsService, directionsRenderer) {
             }
           }
         );
-      });
-  }
+      // });
+  // }
 }

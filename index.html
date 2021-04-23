@@ -52,8 +52,32 @@
         <div
           class="hippoContainer md:text-lg bg-white text-white font-bold rounded-lg sm:border shadow-lg p-5 pb-2 mx-5 md:mx-0"
         >       
-          <section class="homepage">
-            <div class="flex flex-row">
+          <section class="homepage">            
+            <div class="bg-red-100 border-r-4 border-red-500 text-red-700 p-4" role="alert">
+              <p class="font-bold">My location: 
+                <!-- <input class="w-full p-2" type="text" placeholder="26 St John St, Barbican, London EC1M 4AY"> -->
+                <div class=" bg-white rounded">
+        <div class="relative">
+            <input type="text" id="whereAmI" class="h-14 w-9/12 pl-2 rounded-lg z-0" placeholder="26 St John St, Barbican, London EC1M 4AY">
+            <div class="absolute top-2 right-2"> <button onclick="initMap()" class="h-10 px-2 text-white rounded-lg bg-red-500 hover:bg-red-600">👌</button> </div>
+        </div>
+    </div>
+              </p>
+            </div>
+            <p class="text-black my-5 flex flex-row loadingHippo">
+              <img src="img/loading.png" alt="loading_hippo" class="w-10 mr-2">
+              Loading map...
+            </p>
+            <div id="map"></div>
+            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4" role="alert">
+              <p class="font-bold">Your closest hippo: ZSL London Zoo</p>
+            </div>
+            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="disclaimer()">Hug this hippo 🤗</button>
+            <button class="md:text-lg button2 my-2 rounded-md bg-gradient-to-br from-yellow-400 px-1 p-3 sm:p-5 w-full bg-pink-500" onclick="about()">Find another hippo to hug 🦛</button>
+          </section>
+          <section class="hippoDisclaimer">
+            <div class="text-center">
+               <div class="flex flex-row">
               <img
               class="ml-auto w-20 rounded-full flex items-center justify-center mb-5"
               src="img/logo.jpg"
@@ -61,20 +85,6 @@
               />
               <h1 class="ml-2 mr-auto spicy text-center mb-2 text-black text-xl sm:text-2xl md:text-3xl mt-5">Hug a hippo</h1>       
             </div>
-            
-            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4" role="alert">
-              <p class="font-bold">Your closest hippo: ZSL London Zoo</p>
-            </div>
-            <p class="text-black my-5 flex flex-row loadingHippo">
-              <img src="img/loading.png" alt="loading_hippo" class="w-10 mr-2">
-              Loading map...
-            </p>
-            <div id="map"></div>
-            <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800" onclick="disclaimer()">Hug this hippo 🤗</button>
-            <button class="md:text-lg button2 my-2 rounded-md bg-gradient-to-br from-yellow-400 px-1 p-3 sm:p-5 w-full bg-pink-500" onclick="about()">Find another hippo to hug 🦛</button>
-          </section>
-          <section class="hippoDisclaimer">
-            <div class="text-center">
               <h3 class="text-red-500">Disclaimer!</h3>
               <p class="text-black">Hippos are actually super docile creatures and just want nothing more than to be hugged.</p>
             </div>
