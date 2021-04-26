@@ -46,16 +46,16 @@
 
         <!-- WEBSITE CONTENT -->
       <div
-        class=" w-full sm:w-8/12 lg:w-6/12"
+         id="animationsHere"
+        class="animate__animated w-full sm:w-8/12 lg:w-6/12"
       >
         <div
           class="hippoContainer md:text-lg bg-white text-white font-bold rounded-lg sm:border shadow-lg p-5 pb-2 mx-5 md:mx-0"
-        >       
+        >      
+        <section class="otherHippos">
           <div class="travelFrame hidden">
             <iframe width="100%" height="50px" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d39714.945764013384!2d-0.16346704499455325!3d51.528182895947964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x48761b5161b93317%3A0x86773f8e76f37d7!2sSt%20John%20Restaurant%2C%20Saint%20John%20Street%2C%20London!3m2!1d51.5204534!2d-0.10143039999999999!4m5!1s0x48761ad73297f857%3A0xb1723f26e03c12a8!2sLondon%20Zoo%2C%20Outer%20Circle%2C%20London!3m2!1d51.535287499999995!2d-0.1534303!5e0!3m2!1sen!2suk!4v1616530266000!5m2!1sen!2suk" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <a href="/details.html">
-              <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800 btnText">Fly to this hippo ✈️</button>
-            </a>
+            <button onclick="disclaimer()" class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800 btnText">Fly to this hippo ✈️</button>
           </div>
           <!-- SELECT A ZOO -->
           <p class="text-black my-2 text-center">
@@ -63,22 +63,52 @@
           </p>
           <div class="flex flex-row">
           <ul class="mr-4">
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d52693464.727997!2d-75.88904733840118!3d32.857951669541926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x80d95495497f80c9%3A0x5df0f4372635e247!2sSan%20Diego%20Zoo%2C%202920%20Zoo%20Dr%2C%20San%20Diego%2C%20CA%2092101%2C%20United%20States!3m2!1d32.735316!2d-117.149046!5e0!3m2!1sen!2suk!4v1618516489588!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="11 hours 15 minutes">San Diego Zoo</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d52691697.62564429!2d-84.40017528067945!3d36.286933792778534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x864e9996787fa081%3A0xe12b3f83f562c8d2!2sDallas%20Zoo%2C%20South%20R%20L%20Thornton%20Freeway%2C%20Dallas%2C%20TX%2C%20USA!3m2!1d32.7405294!2d-96.81624099999999!5e0!3m2!1sen!2suk!4v1618516751742!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="14 hours 36 minutes">Dallas Zoo</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2652172.5259672073!2d1.5629894972201253!3d49.522044763039354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x4791b85661fc844b%3A0x32f76176d7bfad35!2sZoo%20Basel%2C%20Binningerstrasse%2040%2C%204054%20Basel%2C%20Switzerland!3m2!1d47.547416!2d7.578763599999999!5e0!3m2!1sen!2suk!4v1618516994006!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="1 hour 28 minutes">Zoo Basel</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23219060.210130006!2d4.4028471661311!3d44.73271386521286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x4044732b601ac833%3A0xff4b936dbf9dcb49!2sTbilisi%20Zoo%2C%20Tbilisi%2C%20Georgia!3m2!1d41.713046899999995!2d44.7771395!5e0!3m2!1sen!2suk!4v1618517072036!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="7 hours 25 minutes">Tbilisi Zoo</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d36181035.50560636!2d-51.85146941414315!3d27.17885351211664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x8e414685faad501f%3A0x69f7618a0e68c6a8!2sTem%C3%A1tico%20Hacienda%20N%C3%A1poles%20Park%2C%20Kil%C3%B3metro%20165%20de%20la%20Autopista%20Medell%C3%ADn-Bogot%C3%A1%20Puerto%20Triunfo%2C%20Doradal%2C%20Antioquia%2C%20Colombia!3m2!1d5.9277826!2d-74.7280061!5e0!3m2!1sen!2suk!4v1618517157769!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="2 hours 45 minutes">Temático Hacienda Nápoles Park</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d36181035.50560636!2d-51.85146941414315!3d27.17885351211664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m0!5e0!3m2!1sen!2suk!4v1618517258550!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="21 hours 9 minutes">Taronga Western Plains Zoo</li>
+            <li onclick="selectZoo('San Diego Zoo', 4, '11 hours 15 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d52693464.727997!2d-75.88904733840118!3d32.857951669541926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x80d95495497f80c9%3A0x5df0f4372635e247!2sSan%20Diego%20Zoo%2C%202920%20Zoo%20Dr%2C%20San%20Diego%2C%20CA%2092101%2C%20United%20States!3m2!1d32.735316!2d-117.149046!5e0!3m2!1sen!2suk!4v1618516489588!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              San Diego Zoo</li>
+            <li onclick="selectZoo('Dallas Zoo', 3, '14 hours 36 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d52691697.62564429!2d-84.40017528067945!3d36.286933792778534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x864e9996787fa081%3A0xe12b3f83f562c8d2!2sDallas%20Zoo%2C%20South%20R%20L%20Thornton%20Freeway%2C%20Dallas%2C%20TX%2C%20USA!3m2!1d32.7405294!2d-96.81624099999999!5e0!3m2!1sen!2suk!4v1618516751742!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              Dallas Zoo</li>
+            <li onclick="selectZoo('Zoo Basel  ', 2, '1 hour 28 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2652172.5259672073!2d1.5629894972201253!3d49.522044763039354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x4791b85661fc844b%3A0x32f76176d7bfad35!2sZoo%20Basel%2C%20Binningerstrasse%2040%2C%204054%20Basel%2C%20Switzerland!3m2!1d47.547416!2d7.578763599999999!5e0!3m2!1sen!2suk!4v1618516994006!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              Zoo Basel</li>
+            <li onclick="selectZoo('Tbilisi Zoo', 1, '7 hours 25 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23219060.210130006!2d4.4028471661311!3d44.73271386521286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x4044732b601ac833%3A0xff4b936dbf9dcb49!2sTbilisi%20Zoo%2C%20Tbilisi%2C%20Georgia!3m2!1d41.713046899999995!2d44.7771395!5e0!3m2!1sen!2suk!4v1618517072036!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              Tbilisi Zoo</li>
+            <li onclick="selectZoo('Temático Hacienda Nápoles Park', 3, '2 hours 45 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d36181035.50560636!2d-51.85146941414315!3d27.17885351211664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x8e414685faad501f%3A0x69f7618a0e68c6a8!2sTem%C3%A1tico%20Hacienda%20N%C3%A1poles%20Park%2C%20Kil%C3%B3metro%20165%20de%20la%20Autopista%20Medell%C3%ADn-Bogot%C3%A1%20Puerto%20Triunfo%2C%20Doradal%2C%20Antioquia%2C%20Colombia!3m2!1d5.9277826!2d-74.7280061!5e0!3m2!1sen!2suk!4v1618517157769!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              Temático Hacienda Nápoles Park</li>
+            <li onclick="selectZoo('Taronga Western Plains Zoo', 4, '21 hours 9 minutes','https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d36181035.50560636!2d-51.85146941414315!3d27.17885351211664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m0!5e0!3m2!1sen!2suk!4v1618517258550!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              Taronga Western Plains Zoo</li>
           </ul>
           <ul>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28049752.377277534!2d20.549225923607338!3d30.885484975662344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x3bae69e00b196db1%3A0x4f6f2e78ffa13a5f!2sBannerghatta%20Biological%20Park%2C%20Bannerghatta%20Main%20Rd%2C%20Bannerughatta%2C%20Bengaluru%2C%20Karnataka%20560083%2C%20India!3m2!1d12.7985882!2d77.567835!5e0!3m2!1sen!2suk!4v1618517328373!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="9 hours 45 minutes">Bannerghatta Zoo</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d48632594.25058879!2d35.97642992573912!3d41.929447738270625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x5f0ce0ccb5e023cb%3A0xc825dcbd1da853d3!2sAsahiyama%20Zoo%2C%20Kuranuma%20Higashiasahikawacho%2C%20Asahikawa%2C%20Hokkaido%20078-8205%2C%20Japan!3m2!1d43.7684103!2d142.480038!5e0!3m2!1sen!2suk!4v1618517404027!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="18 hours 45 minutes" >Asahikawa Zoo</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2660984.7751574656!2d-1.6303877537729654!3d49.359379366091865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x47fb58552d6f61ff%3A0x9cfdfb800cb359b!2sZooParc%20de%20Beauval%2C%20Avenue%20du%20Blanc%2C%2041110%20St%20Aignan%2C%20France!3m2!1d47.2476534!2d1.35309!5e0!3m2!1sen!2suk!4v1619119316176!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="1 hour 7 minutess">Beauval Zoo</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56235865.85221908!2d-115.68589528977368!3d30.65185278702464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x7c007270996bbf33%3A0xe61efec80f7e613a!2sHonolulu%20Zoo%2C%20151%20Kapahulu%20Ave%2C%20Honolulu%2C%20HI%2096815%2C%20United%20States!3m2!1d21.2710896!2d-157.82147849999998!5e0!3m2!1sen!2suk!4v1619118288555!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" time="14 hours 58 minutes">Honolulu Zoo Society</li>
-            <li onclick="selectZoo('https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d39714.945764013384!2d-0.16346704499455325!3d51.528182895947964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x48761b5161b93317%3A0x86773f8e76f37d7!2sSt%20John%20Restaurant%2C%20Saint%20John%20Street%2C%20London!3m2!1d51.5204534!2d-0.10143039999999999!4m5!1s0x48761ad73297f857%3A0xb1723f26e03c12a8!2sLondon%20Zoo%2C%20Outer%20Circle%2C%20London!3m2!1d51.535287499999995!2d-0.1534303!5e0!3m2!1sen!2suk!4v1616530266000!5m2!1sen!2suk', true)" class="cursor-pointer underline text-blue-700">London Zoo</li>
+            <li onclick="selectZoo('Bannerghatta Zoo', 2, '9 hours 45 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28049752.377277534!2d20.549225923607338!3d30.885484975662344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x3bae69e00b196db1%3A0x4f6f2e78ffa13a5f!2sBannerghatta%20Biological%20Park%2C%20Bannerghatta%20Main%20Rd%2C%20Bannerughatta%2C%20Bengaluru%2C%20Karnataka%20560083%2C%20India!3m2!1d12.7985882!2d77.567835!5e0!3m2!1sen!2suk!4v1618517328373!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              Bannerghatta Zoo</li>
+            <li onclick="selectZoo('Asahikawa Zoo', 4, '18 hours 45 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d48632594.25058879!2d35.97642992573912!3d41.929447738270625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x5f0ce0ccb5e023cb%3A0xc825dcbd1da853d3!2sAsahiyama%20Zoo%2C%20Kuranuma%20Higashiasahikawacho%2C%20Asahikawa%2C%20Hokkaido%20078-8205%2C%20Japan!3m2!1d43.7684103!2d142.480038!5e0!3m2!1sen!2suk!4v1618517404027!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700" >
+              Asahikawa Zoo</li>
+            <li onclick="selectZoo('Beauval Zoo', 2, '1 hour 7 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2660984.7751574656!2d-1.6303877537729654!3d49.359379366091865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x47fb58552d6f61ff%3A0x9cfdfb800cb359b!2sZooParc%20de%20Beauval%2C%20Avenue%20du%20Blanc%2C%2041110%20St%20Aignan%2C%20France!3m2!1d47.2476534!2d1.35309!5e0!3m2!1sen!2suk!4v1619119316176!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700"
+            >Beauval Zoo</li>
+            <li onclick="selectZoo('Honolulu Zoo Society', 1, '14 hours 58 minutes','https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56235865.85221908!2d-115.68589528977368!3d30.65185278702464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x7c007270996bbf33%3A0xe61efec80f7e613a!2sHonolulu%20Zoo%2C%20151%20Kapahulu%20Ave%2C%20Honolulu%2C%20HI%2096815%2C%20United%20States!3m2!1d21.2710896!2d-157.82147849999998!5e0!3m2!1sen!2suk!4v1619118288555!5m2!1sen!2suk')" class="cursor-pointer underline text-blue-700">
+              Honolulu Zoo Society</li>
+            <li onclick="selectZoo('London Zoo', 3, '16 minutes', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d39714.945764013384!2d-0.16346704499455325!3d51.528182895947964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x48761b5161b93317%3A0x86773f8e76f37d7!2sSt%20John%20Restaurant%2C%20Saint%20John%20Street%2C%20London!3m2!1d51.5204534!2d-0.10143039999999999!4m5!1s0x48761ad73297f857%3A0xb1723f26e03c12a8!2sLondon%20Zoo%2C%20Outer%20Circle%2C%20London!3m2!1d51.535287499999995!2d-0.1534303!5e0!3m2!1sen!2suk!4v1616530266000!5m2!1sen!2suk', true)" class="cursor-pointer underline text-blue-700">
+              London Zoo</li>
           </ul>
           </div>
-        </div>
+        </section> 
+         <section class="hippoDisclaimer">
+            <div class="text-center">
+               <div class="flex flex-row">
+              <img
+              class="ml-auto w-20 rounded-full flex items-center justify-center mb-5"
+              src="img/logo.jpg"
+              alt="flower turquoise"
+              />
+              <h1 class="ml-2 mr-auto spicy text-center mb-2 text-black text-xl sm:text-2xl md:text-3xl mt-5">Hug a hippo</h1>       
+            </div>
+              <h3 class="text-red-500">Disclaimer!</h3>
+              <p class="text-black">Hippos are actually super docile creatures and just want nothing more than to be hugged.</p>
+            </div>
+            <a href="/details.html">
+              <button class="md:text-lg button1 my-2 rounded-md bg-gradient-to-br from-green-400 px-1 p-3 sm:p-5 w-full bg-indigo-800">I understand</button>
+            </a>
+
+          </section>
+      </div>
       </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
@@ -87,5 +117,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/otherZoos.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

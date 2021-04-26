@@ -2,7 +2,7 @@
   $( document ).ready(function() {
     hideAll();
     $("#map").css("height", '0px');
-    $(".homepage").show();    
+    $(".homepage, .otherHippos").show();    
     $("#animationsHere").removeClass(); 
     setTimeout(function () {
       $("#animationsHere").show().addClass("animate__animated animate__jackInTheBox");
@@ -11,7 +11,7 @@
   });
 
   function hideAll(){
-    $(".hippoDetails, .homepage, .hippoContainer, .hippoDisclaimer").hide();
+    $(".hippoDetails, .homepage, .hippoContainer, .hippoDisclaimer, .otherHippos").hide();
     $("#animationsHere").removeClass();
   }
 

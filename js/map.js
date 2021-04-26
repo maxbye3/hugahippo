@@ -54,9 +54,9 @@ function displayDrivingRoute(directionsService, directionsRenderer) {
               $(".loadingHippo").hide();
               $("#map").css("height", window.innerHeight - 350);
               directionsRenderer.setDirections(response);
-              console.log("driving duration: ", response.routes[0].legs[0].duration.text);
-              /* console.log("walking: 1 hour 6 minutes") */
-              ;
+              localStorage.setItem("gate", "3");
+              localStorage.setItem("where", "London Zoo");
+              localStorage.setItem("time", response.routes[0].legs[0].duration.text);
             } else {
               window.alert("Directions request failed due to " + status);
             }
