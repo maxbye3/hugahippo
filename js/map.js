@@ -13,7 +13,7 @@ function initMap() {
 }
 
 function displayDrivingRoute(directionsService, directionsRenderer) {
-    const whereAmI =  $("input").val() || "26 St John St, Barbican, London EC1M 4AY";
+    const whereAmI =  $("input").val() || "Ognisko Polskie 55 Princes Gate, London SW7 2PN";
   // console.log(whereAmI);
         directionsService.route({
             origin: whereAmI,
