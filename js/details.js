@@ -1,6 +1,6 @@
 
   $( document ).ready(function() {
-    $(".hippoBg").css({"background": 'url("http://mrmoonhead.com/hugahippo/img/repeat.png")', "background-size": 'auto'});
+    $(".hippoBg").css({"background": 'url("http://mrmoonhead.com/hugahippo/img/repeat1.png")', "background-size": '50px'});
     $(".description").show();
     $(".gate").html(localStorage.getItem("gate"));
     $(".goingWhere").html(localStorage.getItem("where"));
